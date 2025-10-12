@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre La Seducción: La Llave Hacia Las Puertas Del Paraíso - Domina el arte de la atracción, la psicología femenina y conviértete en el hombre que ellas nunca olvidarán.">
+    <meta name="keywords" content="seducción, psicología femenina, atracción, mentalidad alfa, conquista">
+    <title>La Seducción: La Llave Hacia Las Puertas Del Paraíso</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ===== RESET Y VARIABLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-primary: #FFD700;
+            --color-secondary: #1a1a1a;
+            --color-accent: #DC143C;
+            --color-text: #ffffff;
+            --color-text-dark: #333333;
+            --color-bg-dark: #0a0a0a;
+            --color-bg-section: #1a1a1a;
+            --font-primary: 'Montserrat', sans-serif;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: var(--color-bg-dark);
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ===== UTILIDADES ===== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 40px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .btn--primary {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+            color: var(--color-secondary);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+
+        .btn--primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--color-primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ===== ANIMACIONES ===== */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .slide-up {
+            opacity: 0;
+            animation: slideUp 0.8s ease-out forwards;
+        }
+
+        /* ===== HEADER / HERO ===== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2a2a2a 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.1), transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(220, 20, 60, 0.15), transparent 50%);
+            z-index: 1;
+        }
+
+        .hero__content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero__badge {
+            display: inline-block;
+            background: rgba(220, 20, 60, 0.2);
+            border: 2px solid var(--color-accent);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero__title {
+            font-size: 3rem;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero__title-highlight {
+            color: var(--color-primary);
+            display: block;
+        }
+
+        .hero__description {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero__cta {
+            margin-bottom: 30px;
+        }
+
+        .hero__guarantee {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 20px;
+        }
+
+        /* ===== SECCIÓN PROBLEMA ===== */
+        .problem {
+            padding: 100px 0;
+            background-color: var(--color-bg-section);
+        }
+
+        .problem__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .problem__card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 35px;
+            border-radius: 15px;
+            border-left: 4px solid var(--color-accent);
+            transition: var(--transition);
+        }
+
+        .problem__card:hover {
+            transform: translateX(10px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .problem__card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .problem__card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--color-primary);
+        }
+
+        .problem__card-text {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+        }
+
+        /* ===== SECCIÓN SOLUCIÓN ===== */
+        .solution {
+            padding: 100px 0;
+            background: linear-gradient(180deg, var(--color-bg-dark) 0%, var(--color-bg-section) 100%);
+        }
+
+        .solution__content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 50px;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .solution__image {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .solution__image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .solution__text h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: var(--color-primary);
+        }
+
+        .solution__text p {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .solution__features {
+            list-style: none;
+            margin-top: 30px;
+        }
+
+        .solution__features li {
+            padding: 15px 0;
+            padding-left: 40px;
+            position: relative;
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .solution__features li::before {
+            content: '🗝️';
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+        }
+
+        /* ===== SECCIÓN BENEFICIOS ===== */
+        .benefits {
+            padding: 100px 0;
+            background-color: var(--color-bg-section);
+        }
+
+        .benefits__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .benefits__card {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(220, 20, 60, 0.1));
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px solid rgba(255, 215, 0, 0.2);
+            transition: var(--transition);
+        }
+
+        .benefits__card:hover {
+            transform: scale(1.05);
+            border-color: var(--color-primary);
+            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2);
+        }
+
+        .benefits__card-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .benefits__card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--color-text);
+        }
+
+        .benefits__card-text {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+        }
+
+        /* ===== SECCIÓN TESTIMONIOS ===== */
+        .testimonials {
+            padding: 100px 0;
+            background: linear-gradient(180deg, var(--color-bg-section) 0%, var(--color-bg-dark) 100%);
+        }
+
+        .testimonials__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .testimonial {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .testimonial__header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .testimonial__avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--color-secondary);
+        }
+
+        .testimonial__info h4 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .testimonial__stars {
+            color: var(--color-primary);
+            font-size: 1.2rem;
+        }
+
+        .testimonial__text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.85);
+            font-style: italic;
+        }
+
+        /* ===== SECCIÓN PRECIO ===== */
+        .pricing {
+            padding: 100px 0;
+            background-color: var(--color-bg-section);
+        }
+
+        .pricing__card {
+            max-width: 600px;
+            margin: 50px auto 0;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(220, 20, 60, 0.15));
+            border: 3px solid var(--color-primary);
+            border-radius: 25px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(255, 215, 0, 0.3);
+        }
+
+        .pricing__badge {
+            display: inline-block;
+            background: var(--color-accent);
+            color: var(--color-text);
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .pricing__old-price {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: line-through;
+            margin-bottom: 10px;
+        }
+
+        .pricing__current-price {
+            font-size: 4rem;
+            font-weight: 900;
+            color: var(--color-primary);
+            margin-bottom: 10px;
+        }
+
+        .pricing__installments {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 35px;
+        }
+
+        .pricing__features {
+            list-style: none;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .pricing__features li {
+            padding: 15px 0;
+            padding-left: 40px;
+            position: relative;
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .pricing__features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--color-primary);
+            font-weight: 900;
+            font-size: 1.5rem;
+        }
+
+        .pricing__guarantee {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 15px;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .pricing__guarantee strong {
+            color: var(--color-primary);
+        }
+
+        /* ===== SECCIÓN FAQ ===== */
+        .faq {
+            padding: 100px 0;
+            background: linear-gradient(180deg, var(--color-bg-section) 0%, var(--color-bg-dark) 100%);
+        }
+
+        .faq__list {
+            max-width: 900px;
+            margin: 50px auto 0;
+        }
+
+        .faq__item {
+            background: rgba(255, 255, 255, 0.05);
+            margin-bottom: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .faq__question {
+            padding: 25px 30px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .faq__question:hover {
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        .faq__icon {
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            transition: var(--transition);
+        }
+
+        .faq__answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq__answer-content {
+            padding: 0 30px 25px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+        }
+
+        .faq__item.active .faq__icon {
+            transform: rotate(45deg);
+        }
+
+        .faq__item.active .faq__answer {
+            max-height: 500px;
+        }
+
+        /* ===== CTA FINAL ===== */
+        .cta-final {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--color-secondary), var(--color-bg-dark));
+            text-align: center;
+        }
+
+        .cta-final__title {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 25px;
+            color: var(--color-primary);
+            text-transform: uppercase;
+        }
+
+        .cta-final__text {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-final__urgency {
+            display: inline-block;
+            background: var(--color-accent);
+            padding: 15px 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background-color: var(--color-bg-dark);
+            padding: 50px 0 30px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .footer__text {
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 15px;
+        }
+
+        .footer__links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .footer__link {
+            color: rgba(255, 255, 255, 0.7);
+            transition: var(--transition);
+        }
+
+        .footer__link:hover {
+            color: var(--color-primary);
+        }
+
+        /* ===== RESPONSIVE - MOBILE FIRST ===== */
+        @media (min-width: 768px) {
+            .hero__title {
+                font-size: 4rem;
+            }
+
+            .section-title {
+                font-size: 3.5rem;
+            }
+
+            .problem__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .solution__content {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .benefits__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .testimonials__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero__title {
+                font-size: 5rem;
+            }
+
+            .benefits__grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .problem__grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Animaciones en scroll (se activan con JS) */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== HERO SECTION ===== -->
+    <header class="hero" id="inicio">
+        <div class="hero__content container fade-in">
+            <span class="hero__badge">🔥 Pack Exclusivo Por Tiempo Limitado</span>
+            <h1 class="hero__title">
+                La Seducción:
+                <span class="hero__title-highlight">La Llave Hacia Las Puertas Del Paraíso</span>
+            </h1>
+            <p class="hero__description">
+                Domina el arte de la atracción, descifra la psicología femenina y conviértete en el hombre que todas desean pero que pocas pueden conquistar. El manual definitivo que ya está transformando la vida de miles.
+            </p>
+            <div class="hero__cta">
+                <!-- REEMPLAZA CON TU ENLACE DE HOTMART -->
+                <a href="https://pay.hotmart.com/TU-ENLACE-AQUI" class="btn btn--primary" target="_blank" rel="noopener">
+                    Quiero Dominar La Seducción Ahora
+                </a>
+            </div>
+            <p class="hero__guarantee">
+                🗝️ 3 Libros + Audiolibros | ✓ Acceso inmediato | ✓ Garantía 7 días
+            </p>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+        <!-- ===== SECCIÓN PROBLEMA ===== -->
+        <section class="problem" id="problema">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">¿Te Identificas Con Esto?</h2>
+                <p class="section-subtitle animate-on-scroll">
+                    Si alguna de estas situaciones te suena familiar, este libro es para ti
+                </p>
+                
+                <div class="problem__grid">
+                    <div class="problem__card animate-on-scroll">
+                        <div class="problem__card-icon">😔</div>
+                        <h3 class="problem__card-title">Eres Invisible Para Ellas</h3>
+                        <p class="problem__card-text">
+                            Las mujeres que te atraen no te ven como una opción. Te quedas en la friendzone mientras ellas persiguen a otros hombres. Te sientes invisible y no sabes por qué.
+                        </p>
+                    </div>
+                    
+                    <div class="problem__card animate-on-scroll">
+                        <div class="problem__card-icon">💭</div>
+                        <h3 class="problem__card-title">No Sabes Qué Decir o Hacer</h3>
+                        <p class="problem__card-text">
+                            Te bloqueas al hablar con mujeres. No sabes cómo iniciar conversaciones, crear atracción o dar el siguiente paso. El miedo al rechazo te paraliza constantemente.
+                        </p>
+                    </div>
+                    
+                    <div class="problem__card animate-on-scroll">
+                        <div class="problem__card-icon">⚠️</div>
+                        <h3 class="problem__card-title">Repites Los Mismos Errores</h3>
+                        <p class="problem__card-text">
+                            Eres demasiado disponible, rogando por atención. Te conviertes en el "buen amigo" mientras otros se llevan a la mujer que quieres. Y no entiendes qué estás haciendo mal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN SOLUCIÓN ===== -->
+        <section class="solution" id="solucion">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">No Son Frases... Es Poder Real</h2>
+                <p class="section-subtitle animate-on-scroll">
+                    Un sistema completo para transformar tu mentalidad y dominar el juego de la atracción
+                </p>
+                
+                <div class="solution__content">
+                    <div class="solution__image animate-on-scroll">
+                        <!-- REEMPLAZA CON LA IMAGEN DE TU LIBRO -->
+                        <img src="/Users/macuser/MachoAlfaSeduccion/img/Sticker_libro.png" alt="La Seducción - La Llave">
+                    </div>
+                    
+                    <div class="solution__text animate-on-scroll">
+                        <h3>El Arte De La Seducción Consciente</h3>
+                        <p>
+                            <strong>La Seducción: La Llave Hacia Las Puertas Del Paraíso</strong> no es teoría vacía ni frases de película. Es un mapa real hacia la atracción consciente basado en psicología aplicada y estrategias probadas.
+                        </p>
+                        <p>
+                            Aprenderás a leer la mente femenina, proyectar poder masculino auténtico y usar técnicas psicológicas que generan deseo, conexión y atracción magnética. Todo paso a paso, sin trucos baratos.
+                        </p>
+                        
+                        <ul class="solution__features">
+                            <li>Pack completo: 3 libros digitales en PDF</li>
+                            <li>Audiolibros completos para escuchar en cualquier lugar</li>
+                            <li>Ejercicios prácticos semanales aplicables de inmediato</li>
+                            <li>Técnicas de manipulación sutil y ética</li>
+                            <li>Acceso instantáneo después del pago</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN BENEFICIOS ===== -->
+        <section class="benefits" id="beneficios">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Lo Que Dominarás</h2>
+                <p class="section-subtitle animate-on-scroll">
+                    Transformaciones reales que notarás en semanas
+                </p>
+                
+                <div class="benefits__grid">
+                    <div class="benefits__card animate-on-scroll">
+                        <div class="benefits__card-icon">🔥</div>
+                        <h3 class="benefits__card-title">Lenguaje Corporal Dominante</h3>
+                        <p class="benefits__card-text">
+                            Proyecta seguridad, poder y atractivo sin decir una palabra. Tu cuerpo hablará antes que tu boca y comunicará valor puro.
+                        </p>
+                    </div>
+                    
+                    <div class="benefits__card animate-on-scroll">
+                        <div class="benefits__card-icon">⚡</div>
+                        <h3 class="benefits__card-title">Evita Errores Fatales</h3>
+                        <p class="benefits__card-text">
+                            Descubre los 5 pecados capitales del seductor que matan la atracción al instante y cómo nunca volver a cometerlos.
+                        </p>
+                    </div>
+                    <div class="benefits__card animate-on-scroll">
+                        <div class="benefits__card-icon">🐺</div>
+                        <h3 class="benefits__card-title">Estilo de Vida Alfa</h3>
+                        <p class="benefits__card-text">
+                            Adopta hábitos y mentalidad de un verdadero alfa: confianza, liderazgo y autenticidad que atraen a las mujeres.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN TESTIMONIOS ===== -->
+        <section class="testimonials" id="testimonios">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Ellos Ya Abrieron Las Puertas</h2>
+                <p class="section-subtitle animate-on-scroll">
+                    Resultados reales de hombres que aplicaron el sistema
+                </p>
+                
+                <div class="testimonials__grid">
+                    <div class="testimonial animate-on-scroll">
+                        <div class="testimonial__header">
+                            <div class="testimonial__avatar">A</div>
+                            <div class="testimonial__info">
+                                <h4>Andrés R.</h4>
+                                <div class="testimonial__stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="testimonial__text">
+                            "No creía en esto hasta que apliqué los ejercicios del primer capítulo. En 2 semanas noté un cambio brutal en mi lenguaje corporal y cómo las mujeres respondían. Este libro te da control sin perder autenticidad."
+                        </p>
+                    </div>
+                    
+                    <div class="testimonial animate-on-scroll">
+                        <div class="testimonial__header">
+                            <div class="testimonial__avatar">F</div>
+                            <div class="testimonial__info">
+                                <h4>Felipe G.</h4>
+                                <div class="testimonial__stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="testimonial__text">
+                            "Pasé de ser ignorado a liderar conversaciones y generar atracción real. Las técnicas de psicología femenina son oro puro. Ahora entiendo por qué fallaba antes y cómo cambiar el juego."
+                        </p>
+                    </div>
+                    
+                    <div class="testimonial animate-on-scroll">
+                        <div class="testimonial__header">
+                            <div class="testimonial__avatar">M</div>
+                            <div class="testimonial__info">
+                                <h4>Marcelo T.</h4>
+                                <div class="testimonial__stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="testimonial__text">
+                            "Los ejercicios prácticos son lo mejor. Cada capítulo te da algo concreto para aplicar. En un mes mi confianza se disparó y conseguí resultados que antes me parecían imposibles."
+                        </p>
+                    </div>
+                    
+                    <div class="testimonial animate-on-scroll">
+                        <div class="testimonial__header">
+                            <div class="testimonial__avatar">D</div>
+                            <div class="testimonial__info">
+                                <h4>Diego S.</h4>
+                                <div class="testimonial__stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="testimonial__text">
+                            "El capítulo de manipulación sutil me voló la cabeza. Técnicas que funcionan en la vida real, no teoría aburrida. Lo mejor es que todo está explicado con ejemplos y diálogos exactos."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN PRECIO ===== -->
+        <section class="pricing" id="precio">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Pack Completo Del Seductor</h2>
+                <p class="section-subtitle animate-on-scroll">
+                    3 libros + audiolibros + bonos exclusivos por tiempo limitado
+                </p>
+                
+                <div class="pricing__card animate-on-scroll">
+                    <span class="pricing__badge">🔥 Oferta Lanzamiento</span>
+                    <div class="pricing__old-price">Valor Normal: $39.99</div>
+                    <div class="pricing__current-price">$17.99</div>
+                    <div class="pricing__installments">Precio único - Acceso de por vida</div>
+                    
+                    <ul class="pricing__features">
+                        <li>📖 "La Seducción: La Llave Hacia Las Puertas Del Paraíso" (Libro principal)</li>
+                        <li>📚 "La Seducción Integral: Autenticidad, Atracción y Maestría Psicológica"</li>
+                        <li>👑 "El Camino Del Alfa" (Mentalidad y liderazgo masculino)</li>
+                        <li>🎧 Audiolibros completos </li>
+                        <li>💪 Ejercicios prácticos semanales aplicables</li>
+                        <li>🔥 Guion de cita candente paso a paso</li>
+                        <li>🗣️ Frases magnéticas para cada situación</li>
+                        <li>⚡ Acceso instantáneo - Descarga inmediata</li>
+                    </ul>
+                    
+                    <!-- REEMPLAZA CON TU ENLACE DE HOTMART -->
+                    <a href="https://pay.hotmart.com/TU-ENLACE-AQUI" class="btn btn--primary" target="_blank" rel="noopener">
+                        Sí, Quiero El Pack Completo Ahora
+                    </a>
+                    
+                    <div class="pricing__guarantee">
+                        <strong>🛡️ Garantía de Satisfacción Total de 7 Días</strong><br>
+                        Si en los primeros 7 días decides que el contenido no es para ti, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN FAQ ===== -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Preguntas Frecuentes</h2>
+                <p class="section-subtitle animate-on-scroll">
+                    Resuelve todas tus dudas antes de comenzar
+                </p>
+                
+                <div class="faq__list">
+                    <div class="faq__item animate-on-scroll">
+                        <div class="faq__question">
+                            <span>¿Cómo recibo los libros después de comprar?</span>
+                            <span class="faq__icon">+</span>
+                        </div>
+                        <div class="faq__answer">
+                            <div class="faq__answer-content">
+                                Inmediatamente después de confirmar tu pago, recibirás un email con los enlaces de descarga directa. Podrás descargar los 3 libros en PDF y los audiolibros en MP3 desde cualquier dispositivo.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq__item animate-on-scroll">
+                        <div class="faq__question">
+                            <span>¿Realmente funciona si nunca he sido bueno con mujeres?</span>
+                            <span class="faq__icon">+</span>
+                        </div>
+                        <div class="faq__answer">
+                            <div class="faq__answer-content">
+                                Absolutamente. El libro está diseñado para cualquier nivel. Empezamos desde la mentalidad base hasta técnicas avanzadas. Si puedes leer y aplicar ejercicios simples, verás resultados. No necesitas experiencia previa.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq__item animate-on-scroll">
+                        <div class="faq__question">
+                            <span>¿Qué diferencia este libro de otros sobre seducción?</span>
+                            <span class="faq__icon">+</span>
+                        </div>
+                        <div class="faq__answer">
+                            <div class="faq__answer-content">
+                                Cero relleno. Este no es un libro motivacional genérico. Cada capítulo incluye técnicas específicas, ejemplos de diálogos reales, ejercicios prácticos y estrategias de psicología aplicada. Vas directo a lo que funciona.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq__item animate-on-scroll">
+                        <div class="faq__question">
+                            <span>¿Los audiolibros están incluidos o se pagan aparte?</span>
+                            <span class="faq__icon">+</span>
+                        </div>
+                        <div class="faq__answer">
+                            <div class="faq__answer-content">
+                                Los 3 audiolibros completos están incluidos en el pack. No pagas nada extra. Podrás escucharlos en tu celular, computadora o cualquier dispositivo mientras entrenas, viajas o descansas.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq__item animate-on-scroll">
+                        <div class="faq__question">
+                            <span>¿La garantía es real o tiene trampa?</span>
+                            <span class="faq__icon">+</span>
+                        </div>
+                        <div class="faq__answer">
+                            <div class="faq__answer-content">
+                                Es 100% real y sin trampas. Tienes 7 días completos para leer, aplicar y decidir. Si no estás satisfecho por cualquier razón, escribes un email y te devolvemos tu dinero completo. Así de simple.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq__item animate-on-scroll">
+                        <div class="faq__question">
+                            <span>¿Cuánto tiempo necesito para ver resultados?</span>
+                            <span class="faq__icon">+</span>
+                        </div>
+                        <div class="faq__answer">
+                            <div class="faq__answer-content">
+                                Los primeros cambios en tu mentalidad y lenguaje corporal los notarás en la primera semana si aplicas los ejercicios. Resultados con mujeres reales dependen de tu práctica, pero la mayoría reporta mejoras evidentes en 2-4 semanas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA FINAL ===== -->
+        <section class="cta-final" id="cta">
+            <div class="container">
+                <h2 class="cta-final__title animate-on-scroll">
+                    No Esperes Tener Suerte Con Las Mujeres... Créala
+                </h2>
+                <p class="cta-final__text animate-on-scroll">
+                    Miles de hombres ya transformaron su vida con este sistema. Dejaron de ser invisibles, de estar en la friendzone y de sentirse rechazados. Ahora son ellos quienes eligen. Es tu turno de dominar el juego.
+                </p>
+                
+                <div class="animate-on-scroll">
+                    <!-- REEMPLAZA CON TU ENLACE DE HOTMART -->
+                    <a href="https://pay.hotmart.com/TU-ENLACE-AQUI" class="btn btn--primary" target="_blank" rel="noopener">
+                        Quiero El Pack Completo Por $17.99
+                    </a>
+                    <br>
+                    <div class="cta-final__urgency">
+                        ⏰ Oferta de lanzamiento válida solo por tiempo limitado
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">
+                © 2025 La Seducción - La Llave Hacia Las Puertas Del Paraíso. Todos los derechos reservados.
+            </p>
+            <div class="footer__links">
+                <a href="#" class="footer__link">Términos y Condiciones</a>
+                <a href="#" class="footer__link">Política de Privacidad</a>
+                <a href="#" class="footer__link">Contacto</a>
+            </div>
+            <p class="footer__text">
+                Este sitio no está afiliado a Facebook, Google o cualquier otra compañía. 
+                Los resultados pueden variar según el compromiso y aplicación de cada persona.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        // ===== ANIMACIONES AL HACER SCROLL =====
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+
+        // Observar todos los elementos con la clase animate-on-scroll
+        document.querySelectorAll('.animate-on-scroll').forEach(element => {
+            observer.observe(element);
+        });
+
+        // ===== SCROLL SUAVE PARA ENLACES INTERNOS =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== '') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // ===== FUNCIONALIDAD FAQ (ACORDEÓN) =====
+        document.querySelectorAll('.faq__question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const wasActive = faqItem.classList.contains('active');
+                
+                // Cerrar todos los items
+                document.querySelectorAll('.faq__item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Abrir el item clickeado si no estaba activo
+                if (!wasActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // ===== PREVENIR SCROLL HORIZONTAL =====
+        document.body.style.overflowX = 'hidden';
+    </script>
+</body>
+</html>

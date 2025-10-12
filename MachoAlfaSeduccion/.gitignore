@@ -1,0 +1,21 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos comprimidos o pesados
+*.zip
+*.rar
+*.tar
+*.gz
+*.mp4
+*.mov
+*.psd
+*.ai
+
+# Dependencias
+node_modules/
+vendor/
+
+# Archivos temporales
+*.log
+*.tmp
