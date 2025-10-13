@@ -19,3 +19,7 @@ vendor/
 # Archivos temporales
 *.log
 *.tmp
+
+# Ignorar proyectos externos
+../Desktop/
+../NetBeansProjects/
